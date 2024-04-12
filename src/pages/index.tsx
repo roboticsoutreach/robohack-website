@@ -35,7 +35,7 @@ export default function Home(): JSX.Element {
         <Layout title={`Home`}>
             <HomepageHeader />
             <main>
-                <div className="container" style={{ paddingTop: "2rem" }}>
+                <div className="container padding--lg">
                     <div className="row">
                         <div className="col-12">
                             <h1>What is RoboHack?</h1>
