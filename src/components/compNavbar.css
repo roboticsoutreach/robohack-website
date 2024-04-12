@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    padding: 1rem 1rem;
+    list-style: none;
+}
+
+.navbar li {
+    padding: 0 1rem;
+}
+
+.navbar li:not(:first-child) {
+    border-left: 1px solid #c0c0c0;
+}
+
