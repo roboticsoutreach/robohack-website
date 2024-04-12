@@ -4,7 +4,7 @@ Here you can find links to some useful resources.
 
 ## Game Rules
 
-The game rules can be found on the [Rules](../rules/index) page.
+The game rules can be found on the [Rules](../rules) page.
 
 ## Markers
 
