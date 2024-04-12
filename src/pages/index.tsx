@@ -15,6 +15,16 @@ function HomepageHeader() {
                     {siteConfig.title}
                 </Heading>
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+                <div className={styles.buttons}>
+                    <Link
+                        className="button button--secondary button--lg"
+                        to="https://signup.robohack.co.uk"
+                        target="_blank"
+                    >
+                        Sign Up
+                    </Link>
+                </div>
             </div>
         </header>
     );
