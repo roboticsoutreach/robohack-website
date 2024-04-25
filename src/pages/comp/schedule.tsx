@@ -50,8 +50,9 @@ export default function Schedule() {
                                         <table>
                                             <thead>
                                                 <tr>
-                                                    <th>Time</th>
                                                     <th>Match</th>
+                                                    <th>Staging</th>
+                                                    <th>Time</th>
                                                     {corners.map((corner) => (
                                                         <th>Corner {corner.number}</th>
                                                     ))}
@@ -67,12 +68,18 @@ export default function Schedule() {
                                                     )
                                                     .map((match) => (
                                                         <tr>
+                                                            <td>{match.display_name}</td>
+                                                            <td>
+                                                                {DateTime.fromJSDate(
+                                                                    new Date(match.times.staging.opens as string)
+                                                                ).toFormat("HH:mm:ss")}
+                                                            </td>
                                                             <td>
                                                                 {DateTime.fromJSDate(
                                                                     new Date(match.times.slot.start as string)
                                                                 ).toFormat("HH:mm:ss")}
                                                             </td>
-                                                            <td>{match.display_name}</td>
+
                                                             {match.teams.map((team) => (
                                                                 <td>{team}</td>
                                                             ))}
