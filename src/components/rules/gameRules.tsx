@@ -10,8 +10,8 @@ export default function GameRules() {
                 </h2>
                 <ol>
                     <li>
-                        The objective of the game, called <strong>Tin Can Rally</strong>, is to race around a track,
-                        picking up tin cans along the way.
+                        The objective of the game, called <strong>Tin Can Rally</strong>, is to race around a track
+                        obstructed by tin cans.
                     </li>
                     <li>
                         Before a match begins, participating teams must:
@@ -54,16 +54,16 @@ export default function GameRules() {
                             </li>
                             <li>
                                 Robots can pick up tin cans which are in the track. For every can a robot is carrying
-                                when it crosses a scoring line, the number of points awarded is <strong>increased by 1</strong>
+                                when it crosses a scoring line, the number of points awarded is{" "}
+                                <strong>increased by 1</strong>
                                 .
                                 <br />
                                 For example, a robot carrying two cans is awarded 3 points.
                             </li>
                             <li>
-                                At the end of each lap - defined as the seventh scoring line crossed in a forward
-                                direction, and then every sixth scoring line crossed in a forward direction thereafter -
-                                a robot is awarded an additional <strong>4</strong> points above the points it would
-                                normally get for the crossing.
+                                At the end of each lap - defined as every forward crossing of the scoring line
+                                immediately behind the robot's starting area - a robot is awarded an additional{" "}
+                                <strong>4</strong> points for the crossing.
                             </li>
                             <li>
                                 A robot is deemed to have passed a scoring line when the back of the robot passes the
