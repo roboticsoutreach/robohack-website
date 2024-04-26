@@ -54,10 +54,10 @@ export default function GameRules() {
                             </li>
                             <li>
                                 Robots can pick up tin cans which are in the track. For every can a robot is carrying
-                                when it crosses a scoring line, the number of points awarded is <strong>doubled</strong>
+                                when it crosses a scoring line, the number of points awarded is <strong>increased by 1</strong>
                                 .
                                 <br />
-                                For example, a robot carrying two cans is awarded four points.
+                                For example, a robot carrying two cans is awarded 3 points.
                             </li>
                             <li>
                                 At the end of each lap - defined as the seventh scoring line crossed in a forward
