@@ -12,7 +12,7 @@ export default function Regulations() {
                     <li>All robots must be safe.</li>
                     <li>The judge's decision is final.</li>
                     <li>Teams must conduct themselves within the principles of good sporting conduct.</li>
-                    <li>Any assistance from Smallpeice Trust staff and volunteers is provided without guarantees.</li>
+                    <li>Any assistance from volunteers is provided without guarantees.</li>
                     <li>No remote control systems or radio transmitters or receivers are permitted.</li>
                     <li>While accidental bumps and scrapes are inevitable, the sport is non-contact.</li>
                     <li>Robots must pass a safety inspection before they can compete.</li>
