@@ -92,11 +92,6 @@ const config: Config = {
                     label: "Rules",
                 },
                 {
-                    href: "/gallery",
-                    position: "left",
-                    label: "Gallery",
-                },
-                {
                     type: "docSidebar",
                     sidebarId: "docsSidebar",
                     position: "left",
@@ -153,3 +148,4 @@ const config: Config = {
 };
 
 export default config;
+
