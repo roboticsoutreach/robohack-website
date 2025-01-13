@@ -22,11 +22,8 @@ export default function Regulations() {
                         teams who deliberately engage in collisions or take insufficient precautions against collisions
                         may be penalised, including disqualification from rounds and deduction of league points.
                     </li>
-                    <li>Robots must fit within a 500mm ⨉ 500mm ⨉ 500mm cube at the start of each match.</li>
-                    <li>
-                        Robots must fit within a 500mm ⨉ 750mm ⨉ 750mm cube, with one 750mm axis vertical, at all times
-                        during each match.
-                    </li>
+                    <li>Robots must fit within a 600mm ⨉ 600mm ⨉ 600mm cube at the start of each match.</li>
+                    <li>Robots must fit within a 900mm ⨉ 900mm ⨉ 900mm cube, at all times during each match.</li>
                     <li>Robots must not deliberately drop any part of themselves onto the arena.</li>
                     <li>Robots must have all electronics securely mounted and easily removable.</li>
                     <li>

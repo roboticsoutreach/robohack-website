@@ -19,7 +19,7 @@ function HomepageHeader() {
                 <div className={styles.buttons}>
                     <Link
                         className="button button--secondary button--lg"
-                        to="https://signup.robohack.co.uk"
+                        to="https://portal.robohack.co.uk"
                         target="_blank"
                     >
                         Sign Up
@@ -32,8 +32,9 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
     return (
-        <Layout title={`Home`}>
+        <Layout title="Home">
             <HomepageHeader />
+
             <main>
                 <div className="container padding--lg">
                     <div className="row">
@@ -42,20 +43,18 @@ export default function Home(): JSX.Element {
 
                             <p>
                                 RoboHack is a 24-hour hackathon hosted by the{" "}
-                                <Link to={"https://roboticsoutreach.org"}>Southampton Robotics Outreach</Link> society
-                                at the <Link to={"https://southampton.ac.uk"}>University of Southampton</Link>. Over 24
+                                <Link to="https://roboticsoutreach.org">Southampton Robotics Outreach</Link> society at
+                                the <Link to="https://southampton.ac.uk">University of Southampton</Link>. Over 24
                                 hours, participants work in teams to design, build and program a robot to compete in a
                                 non-contact game. The event columinates in a competition where the robots compete
                                 against each other to determine the winner.
                             </p>
 
-                            <h1>RoboHack 2024</h1>
+                            <h1>RoboHack 2025</h1>
                             <p>
-                                RoboHack 2024 is taking place from <b>4th May 2024</b> to <b>5th May 2024</b> at the
-                                Boldrewood Campus. University of Southampton students are able to sign up{" "}
-                                <Link to="https://signup.robohack.co.uk">here</Link>. The event is sponsored by{" "}
-                                <Link to={"https://ooznest.co.uk"}>Ooznest</Link>, the manufacturers of the aluminium
-                                extrusion used in the event.
+                                RoboHack 2025 is taking place from <b>1st March 2025</b> to <b>2nd March 2025</b> in
+                                Buiding 42 (SUSU). University of Southampton students are able to sign up{" "}
+                                <Link to="#">here</Link>.
                             </p>
                         </div>
                     </div>

@@ -10,8 +10,7 @@ export default function GameRules() {
                 </h2>
                 <ol>
                     <li>
-                        The objective of the game, called <strong>Tin Can Rally</strong>, is to race around a track
-                        obstructed by tin cans.
+                        The objective of the game, called <strong>Nuclear Cleanup</strong>, is to <b>???</b>.
                     </li>
                     <li>
                         Before a match begins, participating teams must:
@@ -22,16 +21,12 @@ export default function GameRules() {
                             </li>
                             <li>
                                 Attach a <a href="#flag-specification">robot flag</a>. Robot flags will be provided by
-                                SourceBots officials in the staging area.
+                                marshals in the staging area.
                             </li>
                             <li>
                                 Place their robot in the starting area that they are assigned. The robot must be placed
                                 such that it is entirely within this starting area, with no parts overhanging its
                                 boundary. Its orientation does not matter.
-                            </li>
-                            <li>
-                                Vacate the arena 40 seconds before the scheduled start time. During the 40 second period
-                                prior to the start of the match there must be no interaction with the robot.
                             </li>
                             <li>Follow the directions of the match officials.</li>
                         </ul>
@@ -49,33 +44,7 @@ export default function GameRules() {
                         Game points will be awarded as follows:
                         <ol type="a">
                             <li>
-                                <strong>1</strong> point is awarded each time a robot crosses a scoring line in the
-                                anti-clockwise direction.
-                            </li>
-                            <li>
-                                Robots can pick up tin cans which are in the track. For every can a robot is carrying
-                                when it crosses a scoring line, the number of points awarded is{" "}
-                                <strong>increased by 1</strong>
-                                .
-                                <br />
-                                For example, a robot carrying two cans is awarded 3 points.
-                            </li>
-                            <li>
-                                At the end of each lap - defined as every forward crossing of the scoring line
-                                immediately behind the robot's starting area - a robot is awarded an additional{" "}
-                                <strong>4</strong> points for the crossing.
-                            </li>
-                            <li>
-                                A robot is deemed to have passed a scoring line when the back of the robot passes the
-                                line.
-                            </li>
-                            <li>
-                                If a robot passes backwards (i.e: clockwise) over any scoring line it must "undo" these
-                                before any further forwards line crossings will be counted.
-                            </li>
-                            <li>
-                                At the end of a match, each robot is awarded <strong>2</strong> additional points for
-                                each tin can it is carrying.
+                                <b>???</b>
                             </li>
                         </ol>
                     </li>

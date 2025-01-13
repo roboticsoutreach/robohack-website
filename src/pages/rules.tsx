@@ -2,7 +2,6 @@ import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import styles from "./rules.module.css";
 import clsx from "clsx";
-import Link from "@docusaurus/Link";
 import GameRules from "../components/rules/gameRules";
 import Regulations from "../components/rules/regulations";
 import Specifications from "../components/rules/specifications";
@@ -11,15 +10,15 @@ import Sponsors from "../components/rules/sponsors";
 
 export default function Rules() {
     return (
-        <Layout title={"Rules"}>
+        <Layout title="Rules">
             <header className={clsx("hero hero--primary", styles.heroBanner)}>
                 <div className="container">
-                    <Heading as={"h1"} className={"hero__title"}>
-                        Tin Can Rally
+                    <Heading as="h1" className="hero__title">
+                        Nuclear Cleanup
                     </Heading>
 
-                    <Heading as={"h2"} className={"hero__subtitle"}>
-                        RoboHack 2024
+                    <Heading as="h2" className="hero__subtitle">
+                        RoboHack 2025
                     </Heading>
                 </div>
             </header>
