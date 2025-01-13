@@ -54,7 +54,7 @@ export default function Home(): JSX.Element {
                             <p>
                                 RoboHack 2025 is taking place from <b>1st March 2025</b> to <b>2nd March 2025</b> in
                                 Buiding 42 (SUSU). University of Southampton students are able to sign up{" "}
-                                <Link to="https://portal.robohack.co.uk">here</Link>.
+                                <Link to="#">here</Link>.
                             </p>
                         </div>
                     </div>

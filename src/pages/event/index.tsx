@@ -18,7 +18,7 @@ export default function EventIndex() {
                         <div className="col col--4 col--offset-1">
                             <h2>Details</h2>
                             <p>
-                                <FontAwesomeIcon icon={faClock} /> 1st March 2025, 11:00 - 2nd March 2025, 15:00
+                                <FontAwesomeIcon icon={faClock} /> 1st March 2025, 10:00 - 2nd March 2025, 15:00
                                 <br />
                                 <FontAwesomeIcon icon={faMapLocation} /> Building 42, Highfield Campus, University of
                                 Southampton
@@ -37,7 +37,7 @@ export default function EventIndex() {
                             <h2>Schedule</h2>
 
                             <p>
-                                Doors will open at 11:00 on 1st March 2025, with the event starting at 12:00. It will
+                                Doors will open at 10:00 on 1st March 2025, with the event starting at 10:30. It will
                                 begin with a presentation in which we will dispense useful information about the event.
                             </p>
 
@@ -53,11 +53,11 @@ export default function EventIndex() {
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>11:00</td>
+                                                <td>10:00</td>
                                                 <td>Doors open</td>
                                             </tr>
                                             <tr>
-                                                <td>12:00</td>
+                                                <td>10:30</td>
                                                 <td>Welcome presentation & start</td>
                                             </tr>
                                             <tr>

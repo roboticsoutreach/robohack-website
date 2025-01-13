@@ -82,6 +82,11 @@ const config: Config = {
             },
             items: [
                 {
+                    to: "blog",
+                    label: "News",
+                    position: "left",
+                },
+                {
                     href: "/event",
                     position: "left",
                     label: "Event",
@@ -97,13 +102,7 @@ const config: Config = {
                     position: "left",
                     label: "Docs",
                 },
-                {
-                    href: "/comp/schedule",
-                    position: "right",
-                    label: "Competition",
-                    componly: "true",
-                },
-            ].filter((item) => item.componly !== "true" || process.env.SITE_MODE === "comp") as any,
+            ],
         },
         footer: {
             style: "dark",
@@ -124,10 +123,6 @@ const config: Config = {
                 {
                     title: "Social Media",
                     items: [
-                        {
-                            label: "X",
-                            href: "http://twitter.com/robotoutreach",
-                        },
                         {
                             label: "Discord (SRO)",
                             href: "https://discord.gg/hfjQ3kqwXc",

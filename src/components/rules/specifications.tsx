@@ -23,25 +23,16 @@ export default function Specifications() {
                             <th scope="col">Marker Size (mm)</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Arena boundary</td>
-                            <td>0 - 7</td>
-                            <td>100</td>
-                        </tr>
-                    </tbody>
+                    <tbody></tbody>
                 </table>
                 <p>The markers can be printed on a black-and-white printer.</p>
-                <p>
-                    Sixteen arena wall markers are positioned around the arena as shown in the{" "}
-                    <a href="#arena-specification">arena specification</a>. Marker codes are mirrored on each side of
-                    the arena.
-                </p>
                 <p>Wall markers are placed such that the bottom of the marker is 20 ±5mm from the arena floor.</p>
                 <h3>
                     <a className="anchor" id="arena-specification"></a>Arena
                 </h3>
-                <img src="/img/rules/2024/fig-arena.svg" alt="Arena diagram" width="90%" height="auto" />
+                {
+                    //<img src="/img/rules/2024/fig-arena.svg" alt="Arena diagram" width="90%" height="auto" />
+                }
                 <ol>
                     <li>
                         The above figure represents, to scale, a birds eye view of the arena. The arena is{" "}
@@ -53,16 +44,16 @@ export default function Specifications() {
                         100mm.
                     </li>
                     <li>
-                        Starting areas are 1000 ±50mm squares and will be marked by tape which is considered part of the
-                        starting area.
+                        Starting zones are 1000 ±50mm squares and will be marked by tape which is considered part of the
+                        starting zone.
                     </li>
-                    <li>Starting area 1 is at the top of the arena diagram, and area 2 is at the bottom.</li>
+                    <li>Starting zone 0 is on the left of the arena diagram, and zone 1 is on the right.</li>
                     <li>
                         The green boxes denote a robot in their start locations, shown in yellow. Robots may start
                         anywhere inside their starting area facing any direction.
                     </li>
                     <li>The inner walls of the arena have a minimum height of 170mm.</li>
-                    <li>SourceBots reserves the right to have match officials in the arena during games.</li>
+                    <li>SRO reserves the right to have match officials in the arena during games.</li>
                 </ol>
                 <h3>
                     <a className="anchor" id="flag-specification"></a>Robot flags

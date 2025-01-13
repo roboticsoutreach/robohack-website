@@ -9,9 +9,6 @@ export default function Sponsors() {
                 <Link to={"https://southampton.ac.uk"}>
                     <img className={styles.sponsorLogo} src={"/img/uos-logo.png"} />
                 </Link>
-                <Link to={"https://ooznest.co.uk"}>
-                    <img className={styles.sponsorLogo} src={"/img/ooznest-logo.png"} />
-                </Link>
             </div>
         </section>
     );

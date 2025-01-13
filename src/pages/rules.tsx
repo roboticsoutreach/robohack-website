@@ -14,7 +14,7 @@ export default function Rules() {
             <header className={clsx("hero hero--primary", styles.heroBanner)}>
                 <div className="container">
                     <Heading as="h1" className="hero__title">
-                        Tin Can Rally
+                        Nuclear Cleanup
                     </Heading>
 
                     <Heading as="h2" className="hero__subtitle">
