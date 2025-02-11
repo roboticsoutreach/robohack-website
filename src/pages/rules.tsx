@@ -2,11 +2,7 @@ import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import styles from "./rules.module.css";
 import clsx from "clsx";
-import GameRules from "../components/rules/gameRules";
-import Regulations from "../components/rules/regulations";
-import Specifications from "../components/rules/specifications";
-import CompStructure from "../components/rules/compStructure";
-import Sponsors from "../components/rules/sponsors";
+import Content from "../components/rules/content.mdx";
 
 export default function Rules() {
     return (
@@ -23,33 +19,11 @@ export default function Rules() {
                 </div>
             </header>
 
-            <Sponsors />
-
-            <section className={clsx(styles.section, styles.sectionGrey)}>
+            <section className={clsx(styles.section)}>
                 <div className={clsx(styles.container)}>
-                    <h1>Table of Contents</h1>
-
-                    <ol>
-                        <li>
-                            <a href="#game-rules">Game Rules</a>
-                        </li>
-                        <li>
-                            <a href="#regulations">Regulations</a>
-                        </li>
-                        <li>
-                            <a href="#specifications">Specifications</a>
-                        </li>
-                        <li>
-                            <a href="#comp-structure">Competition Structure</a>
-                        </li>
-                    </ol>
+                    <Content />
                 </div>
             </section>
-
-            <GameRules />
-            <Regulations />
-            <Specifications />
-            <CompStructure />
         </Layout>
     );
 }
