@@ -5,15 +5,13 @@ control up to twelve servos.
 
 ## Accessing the Servo Board
 
-The servo board can be accessed using the `servo_board` property of
-the `Robot` object.
+The servo board can be accessed using the `servos` submodule in `sbot`:
 
 ```python
-my_servo_board = robot.servo_board
+from sbot import servos
 ```
 
-This board object has an array containing the servos connected to it,
-which can be accessed as `servos[0]`, `servos[1]`, `servos[2]`, etc.
+Servos are accessed by their index: the servo connected to position 0 on the board should be accessed as id `0`, and so on.
 The servo board is labelled so you know which servo is which.
 
 !!! tip
@@ -25,16 +23,16 @@ The position of servos can range from `-1` to `1` inclusive:
 
 ```python
 # set servo 1's position to 0.2
-robot.servo_board.servos[1].position = 0.2
+servos.set_position(1, 0.2)
 
 # Set servo 2's position to -0.55
-robot.servo_board.servos[2].position = -0.55
+servos.set_position(2, -0.55)
 ```
 
 You can read the last value a servo was set to using similar code:
 
 ```python
-last_position = robot.servo_board.servos[11].position
+last_position = servos.get_position(11)
 ```
 
 :::warning
