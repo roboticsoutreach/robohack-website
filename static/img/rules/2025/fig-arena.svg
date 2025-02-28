@@ -141,6 +141,10 @@
         <line x1="0" y1="3900" x2="2700" y2="3900" class="dimension" />
         <text x="675" y="3825" class="dimension">2700±50mm</text>
 
+        <!-- dimension: score line offset -->
+        <line x1="0" y1="4400" x2="1350" y2="4400" class="dimension" />
+        <text x="675" y="4325" class="dimension">1350±50mm</text>
+
         <!-- dimension: green starting zone from top -->
         <line x1="5300" y1="0" x2="5300" y2="2200" class="dimension" />
         <text x="5230" y="1100" transform="rotate(-90, 5230, 1100)" class="dimension">2200±100mm</text>
