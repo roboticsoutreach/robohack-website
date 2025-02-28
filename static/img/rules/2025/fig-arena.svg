@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6000" height="6000">
+    <style type="text/css">
+        .bordered {
+            fill: transparent;
+            stroke: black;
+            stroke-width: 10;
+        }
+
+        .team-0 {
+            fill: #ff6600;
+        }
+
+        .team-1 {
+            fill: #ffff00;
+        }
+
+        .arena-divider {
+            fill: grey;
+        }
+
+        .scoring-zone-divider {
+            stroke: black;
+            stroke-width: 10;
+            stroke-dasharray: 100, 60;
+        }
+
+        rect.token {
+            stroke: #660066;
+            stroke-width: 5;
+            fill: #ff00ff;
+        }
+
+        line.dimension {
+            stroke: #333333;
+            stroke-width: 5;
+            marker-start: url(#dimension-arrow-head-start);
+            marker-end: url(#dimension-arrow-head-end);
+        }
+
+        text.dimension {
+            fill: #333333;
+            text-anchor: middle;
+            dominant-baseline: central;
+            font-family: monospace;
+            font-size: 100px;
+            z-index: 100;
+        }
+
+        .dimension-arrow-head {
+            fill: #333333;
+        }
+
+        .dimension-guide {
+            stroke: #777;
+            stroke-width: 1;
+            stroke-dasharray: 25 3;
+            stroke-linecap: round;
+            fill: none;
+        }
+    </style>
+    <rect width="6000" height="6000" style="fill: white" />
+
+    <defs>
+        <marker id="dimension-arrow-head-start" markerWidth="10" markerHeight="10" refX="0" refY="5" orient="auto"
+            markerUnits="strokeWidth">
+            <path d="M 10 0 L 0 5 L 10 10 Z" class="dimension-arrow-head" />
+        </marker>
+
+        <marker id="dimension-arrow-head-end" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto"
+            markerUnits="strokeWidth">
+            <path d="M 0 0 L 10 5 L 0 10 Z" class="dimension-arrow-head" />
+        </marker>
+
+
+        <g id="token">
+            <rect width="130" height="130" transform="translate(-65, -65)" class="token" />
+        </g>
+
+        <g id="arena_half">
+            <!-- scoring zone divider-->
+            <line height="5400" x1="1350" y1="0" x2="1350" y2="5400" class="scoring-zone-divider" />
+
+            <!-- tokens-->
+            <use xlink:href="#token" x="675" y="600" />
+            <use xlink:href="#token" x="2025" y="600" />
+
+            <use xlink:href="#token" x="2025" y="2700" />
+            <use xlink:href="#token" x="2600" y="2700" />
+
+            <use xlink:href="#token" x="675" y="4800" />
+            <use xlink:href="#token" x="2025" y="4800" />
+        </g>
+    </defs>
+
+    <g transform="translate(300 300)">
+        <!-- arena wall -->
+        <rect width="5400" height="5400" class="bordered" />
+
+        <line height="5400" x1="2700" y1="0" x2="2700" y2="5400" class="scoring-zone-divider" />
+
+        <!-- starting zones-->
+        <g transform="translate(0, 2200)">
+            <rect width="1000" height="1000" class="bordered" />
+            <rect width="600" height="600" x="200" y="200" class="team-0" />
+        </g>
+        <g transform="translate(4400, 2200)">
+            <rect width="1000" height="1000" class="bordered" />
+            <rect width="600" height="600" x="200" y="200" class="team-1" />
+        </g>
+
+        <!-- arena divider2 -->
+        <rect width="70" height="1200" x="2665" class="arena-divider" />
+        <rect width="70" height="1200" x="2665" y="2100" class="arena-divider" />
+        <rect width="70" height="1200" x="2665" y="4200" class="arena-divider" />
+
+        <!-- dimension: top arena divider -->
+        <line x1="2600" y1="0" x2="2600" y2="1200" class="dimension" />
+        <text x="2510" y="975" transform="rotate(-90, 2510, 975)" class="dimension">1200±50mm</text>
+
+        <!-- dimension: bottom arena divider -->
+        <line x1="2600" y1="4200" x2="2600" y2="5400" class="dimension" />
+        <text x="2530" y="4800" transform="rotate(-90, 2530, 4800)" class="dimension">1200±50mm</text>
+
+        <!-- tokens -->
+        <use xlink:href="#arena_half" />
+        <use xlink:href="#arena_half" transform="scale(-1, 1) translate(-5400, 0)" />
+
+        <!-- dimension: arena side -->
+        <line x1="-50" y1="0" x2="-50" y2="5400" class="dimension" />
+        <text x="-120" y="2700" transform="rotate(-90, -120, 2700)" class="dimension">5400±100mm</text>
+
+        <!-- dimension: arena top -->
+        <line x1="0" y1="-50" x2="5400" y2="-50" class="dimension" />
+        <text x="2700" y="-120" class="dimension">5400±100mm</text>
+
+        <!-- dimension: arena divider -->
+        <line x1="2665" y1="5350" x2="2735" y2="5350" class="dimension" />
+        <text x="2700" y="5470" class="dimension">70±50mm</text>
+
+        <!-- dimension: arena divider offset -->
+        <line x1="0" y1="3900" x2="2700" y2="3900" class="dimension" />
+        <text x="675" y="3825" class="dimension">2700±50mm</text>
+
+        <!-- dimension: green starting zone from top -->
+        <line x1="5300" y1="0" x2="5300" y2="2200" class="dimension" />
+        <text x="5230" y="1100" transform="rotate(-90, 5230, 1100)" class="dimension">2200±100mm</text>
+
+        <!-- dimension: green starting zone width -->
+        <line x1="4400" y1="3250" x2="5400" y2="3250" class="dimension" />
+        <text x="4900" y="3320" class="dimension">1000±100mm</text>
+
+        <!-- dimension: green starting zone height -->
+        <line x1="4350" y1="2200" x2="4350" y2="3200" class="dimension" />
+        <text x="4280" y="2700" transform="rotate(-90, 4280, 2700)" class="dimension">1000±100mm</text>
+
+        <!-- dimension: Top left cube Y -->
+        <line x1="675" y1="0" x2="675" y2="535" class="dimension" />
+        <text x="940" y="270" class="dimension">535±20mm</text>
+
+        <!-- dimension: Top left cube X -->
+        <line x1="0" y1="600" x2="610" y2="600" class="dimension" />
+        <text x="305" y="530" class="dimension">610±20mm</text>
+
+        <!-- dimension: Top right cube Y -->
+        <line x1="2025" y1="0" x2="2025" y2="535" class="dimension" />
+        <text x="1760" y="270" class="dimension">535±20mm</text>
+
+        <!-- dimension: Top right cube X -->
+        <line x1="2090" y1="600" x2="2665" y2="600" class="dimension" />
+        <text x="2378" y="530" class="dimension">610±20mm</text>
+
+        <!-- dimension: Centre gap -->
+        <line x1="2090" y1="2700" x2="2535" y2="2700" class="dimension" />
+        <text x="2312" y="2570" class="dimension">610±20mm</text>
+
+        <!-- dimension: Centre Y -->
+        <line x1="2300" y1="2700" x2="2300" y2="5400" class="dimension" />
+        <text x="2000" y="3200" class="dimension">2700±20mm</text>
+    </g>
+</svg>

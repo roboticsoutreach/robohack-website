@@ -32,3 +32,11 @@
     flex-direction: column;
 }
 
+table {
+    /* Docusaurus changes this for some reason */
+    display: table;
+}
+
+img {
+    margin: 0 auto;
+}

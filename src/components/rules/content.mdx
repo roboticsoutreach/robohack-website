@@ -1,0 +1,140 @@
+## Prologue
+
+You've been hired by your government to remove nuclear waste from your nation.
+Your aim is to transfer **radioactive cubes** from your nation's territory to that of your rival nation.
+But be careful - it looks as though they're doing the same thing!
+
+## Game Rules
+
+1. The objective of the game, called **Nuclear Cleanup**, is to finish with as many radioactive cubes in your rival territory as possible.
+1. Before a match begins, participating teams must:
+    1. Present their robot in the staging area, adjacent to the arena, before the scheduled close of staging time. The staging area will be clearly marked.
+    1. Attach a robot flag. Robot flags will be provided by match officials in the staging area.
+    1. Place their robot in the starting area that they are assigned. The robot must be placed such that it is entirely within this starting area, with no parts overhanging its boundary. Its orientation does not matter.
+    1. Vacate the arena before the scheduled start time. At this point there must be no interaction with the robot.
+    1. Follow the directions of the match officials.
+1. The game is played between **two** robots.
+1. Each match lasts for **150** seconds.
+1. Robots will be started at the direction of match officials.
+1. Each robot starts in the starting zone within its allocated territory.
+1. There are 12 radioactive cubes.
+1. At the end of the match, cubes are scored as follows:
+    1. Cubes in a team's lower scoring zones are worth **1** point for the rival team.
+    1. Cubes in a team's higher scoring zones are worth **3** point for the rival team.
+1. The rival territory for a robot is on the opposite side of the arena to the robot's starting zone.
+1. A radioactive cube is in a territory if, and only if, the vertical projection of the cube is fully within the territory, where the tape denoting the territory **is** included in this area.
+1. Falling radioactive cubes will be scored when they come to rest.
+1. There is a bonus point available every match for a robot fully leaving its starting zone for the first time in the match.
+1. At the end of the match, the team with the most points wins.
+1. Southampton Robotics Outreach reserves the right to have match officials in the arena during matches.
+1. Decisions by match officials are final.
+1. The interaction a team may have with their robot after a match has started is limited:
+    1. Teams may press the start button as frequently as they like for up to 5 seconds after the start of the match.
+    1. No other interaction is allowed until their robot is returned to them. Doing so may result in disqualification from the match.
+1. Robots must not deliberately or negligently damage the arena or anything in it.
+1. A robot will be stopped during a match when it is at risk of severely damaging itself, other robots, the arena or otherwise poses a safety risk.
+
+## Specifications
+
+### Arena
+
+The arena is a square, shown to scale in the diagram below.
+
+<img src="/img/rules/2025/fig-arena.svg" alt="Arena diagram" width="100%" height="auto" />
+
+1. All measurements on the diagram are in millimetres. Measurements of the location if items in the arena rare relative to its center.
+1. The 2 squares on the sides of the arena denote the robot starting zones.
+1. Each robot will be assigned a corner at the start of every match to indicate its starting zone. Robots may start anywhere inside this area, facing any direction.
+1. The perimeter of the arena floor is delimited by the arena wall, which has a minimum height of 250 mm.
+1. All lines are marked with 48 mm tape using the colours shown in the diagram.
+1. The floor of the arena is covered with a closed-loop, short pile carpet.
+1. Along the centre of the arena are 3 immovable walls with height 25mm.
+
+### Markers
+
+The arena is labelled with fiducial markers. Each marker pattern encodes a number. Each marker number is associated with a particular feature within the arena, and also has an associated size
+
+| Item | Marker Numbers | Marker Size (mm) |
+|------|----------------|------------------|
+| Arena Boundary | 0 - 27 | 150 |
+| Cube | 100 - 129 | 80 |
+
+The markers can be printed on a black-and-white printer.
+
+Each of the arena walls have 7 markers positioned along them as detailed below. These are evenly spaced at a spacing of 675±5 mm between marker centres. All arena boundary markers are positioned with the grey border 50±5 mm above the floor.
+
+<img src="/img/rules/2025/fig-markers.svg" alt="Arena diagram" width="50%" height="auto" />
+
+### Cubes
+
+1. Cubes are "single wall" 130±10 mm cardboard box cubes.
+1. Cubes have an 80 mm fiducial marker in the centre of each face.
+1. The identifier of this marker is the same for all faces.
+1. Cubes will be arranged as shown in the arena specification.
+1. The identifier of each cube in the arena is randomly chosen from the available values in the marker table and where particular cube start may vary between matches.
+1. Each cube has a unique value within the arena.
+
+
+### Flag mounts
+
+A “robot flag” is a removable identifier that will be attached to a robot throughout the match. It features the zone colour to allow spectators to easily associate a robot with its zone. Robot flags will be provided by Southampton Robotics Outreach. The flag assembly is shown below.
+
+The pole is constructed from 15 mm white PVC piping. This is what will attach to your flag mount.
+
+<img src="/img/rules/2025/fig-flag.svg" alt="Arena diagram" width="50%" height="auto" />
+
+To allow flags to be easily used with your robot, your flag mount must conform to the following requirements:
+
+1. The flag mount must be securely affixed to the main chassis of the robot, and hold the flag vertical when the robot is in its typical stopped position.
+1. Flags are not counted when considering the size of the robot.
+1. The identifying part of the robot flag must be visible when attached to the mount.
+
+## Robot Design Rules
+
+To ensure a fair competition, all teams must adhere to the following regulations.
+Violations of these rules, without an exemption, may result in penalties.
+These may include deductions of points or outright disqualification.
+
+1. All robots must be safe.
+1. Robots must pass a safety inspection before they can enter a physical arena.
+1. Teams must conduct themselves within the principles of good sporting conduct.
+1. While accidental bumps and scrapes are inevitable, the sport is non-contact.
+1. Robots must not deliberately or negligently damage the arena or anything in it.
+1. Robots must fit within a 500 mm × 500 mm × 500 mm cube at all times.
+1. Robots must have a spare USB port accessible to match officials.
+1. Robots must have a flag mounting that conforms to the flag mount requirements.
+1. Robots must not use any remote control systems, radio transmitters or receivers.
+1. Robots must not have any fiducial markers visible to other robots that may confuse other robots.
+
+For queries about the rules and regulations, including requests for an exemption, please speak to the event team.
+
+## Safety regulations
+
+To confirm that your robot is safe, a safety inspection will be carried about by Southampton Robotics Outreach prior to the start of the competition. In order to pass a safety inspection, robots must:
+
+1. Have a mess of less than 13 kg. Generally, teams should aim for their robot to be below 10 kg.
+1. Have all electronics mounted securely with removeable fastenings. Cable ties, velcro and screws are recommended for this. Please do not affix anything to the boards with glue or double-sided tape.
+1. Have all wiring tidy and securely mounted. Wiring must not be at risk of being snagged by mechanisms or other robots. Wires should be mounted with removable fastening to aid development.
+1. Provide adequate protection to the batteries they use, including protection from mechanical damage. The provided hard case that secures the battery is highly recommended for this.
+    1. Only batteries provided or authorised by Southampton Robotics Outreach may be used.
+    1. The robot may only be powered through the Southampton Robotics Outreach power board.
+    1. Battery charging at the event is only to be carried out by Southampton Robotics Outreach.
+1. Have a power switch which will completely immobilise the robot. It must be accessible and obvious, without disassembling the robot in any way. It should be on top of the robot.
+1. Be generally safe to handle.
+1. Not contain any power system that exceeds 50 V.
+
+For queries about the rules and regulations, including requests for an exemption, please speak to the event team.
+
+## Competition structure
+
+The competition is structured into two phases: The **main league** and the **knockout**
+
+1. At the end of a game, league points will be awarded as follows:
+    1. The team with the most game points will be awarded 4 points towards the competition league.
+    1. The team with the second most will be awarded 2.
+    1. Teams whose robot was not entered into the round, or who were disqualified from the round, will be awarded no points.
+1. If a match ends in a tie, both robots will be awarded 3 points.
+1.  At the end of the leagues, positions in the leagues are used to seed a knockout.
+    1. The knockouts will be used to determine the final 1<sup>st</sup>, 2<sup>nd</sup> and 3<sup>rd</sup> awards.
+    1. Only the top 4 teams from the league will progress into the knockouts.
+1. In the event of a tie in a knockout match, the team that ranked highest in the league will go through. In the event of a tie in league points, the team which has the most game points in the league will go through.
