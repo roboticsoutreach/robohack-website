@@ -43,7 +43,7 @@ If you intend to use only the internal On|Off switch, a terminal block must be p
 | H0–1, L0–3 | Green when the corresponding output is on [^1]<br />Red when the output's current limit is reached                        | Off                    |
 | RUN\|ERROR | Orange on power-up, or USB disconnection <br />Flashing green when ready to run<br /> Solid green when running or booting | Orange                 |
 
-[^1]: The outputs only turn on when your program runs (specifically, when the `Robot` object is created).
+[^1]: The outputs only turn on when your program runs (specifically, when the `sbot` module is imported).
 
 On power-up and when waiting for the start button, the Power Board will beep once.
 
