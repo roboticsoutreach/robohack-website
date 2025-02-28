@@ -19,7 +19,7 @@ To use them:
 2.  Crimp the stripped end into an appropriately sized ferrule.
     Make sure that the metal part of the ferrule is crimped around the stripped end, and that no bare wire is showing.
 3.  Insert the ferrule-covered end into the back of a terminal block.
-4.  To secure the wire in place, tighten the corresponding screw
+4.  To secure the wire in place, tighten the corresponding screw.
 
 Terminal blocks are keyed such that they can only be inserted one way, and only the correct size will work.
 
