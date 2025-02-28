@@ -14,7 +14,7 @@ The brain of your robot is a Raspberry Pi 3B+. This handles the running of your 
 
 ## Power HAT
 
-Your Raspberry Pi has a 'KCH' Power HAT mounted on the top. This allows you to connect power to it using a 5mm terminal block.
+Your Raspberry Pi has a 'KCH' Power HAT mounted on the top. This allows you to connect power to it using a 7.5mm terminal block.
 
 ![Power HAT](../assets/img/kit/power-hat.svg)
 
