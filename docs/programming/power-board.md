@@ -3,7 +3,7 @@
 The power board can be accessed using the `power` submodule in `sbot`:
 
 ```python
-power.get_battery_data(...)
+from sbot import power
 ```
 ## Power outputs
 

@@ -13,7 +13,7 @@ Digital pins 0 and 1 are reserved and cannot be used.
 The Arduino can be accessed using the `arduino` submodule in `sbot`:
 
 ```python
-arduino.digital_write(...)
+from sbot import arduino
 ```
 
 You can use the GPIO _(General Purpose Input/Output)_ pins for anything,
