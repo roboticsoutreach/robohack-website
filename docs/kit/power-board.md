@@ -31,7 +31,7 @@ There is also a Micro USB B connector which should be connected to the Raspberry
 Finally, there are connectors for external Start and On|Off switches. You may connect any latching switch for the On|Off switch, or a push-to-make button for the Start button.
 
 :::tip
-If you intend to use only the internal On|Off switch, a CamCon must be plugged into the On|Off connector with a wire connecting one pin to the other pin on the same connector. Your power board should already have one of these plugged in.
+If you intend to use only the internal On|Off switch, a terminal block must be plugged into the On|Off connector with a wire connecting one pin to the other pin on the same connector. Your power board should already have one of these plugged in.
 :::
 
 ## Indicators
