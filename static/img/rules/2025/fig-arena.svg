@@ -171,7 +171,7 @@
 
         <!-- dimension: Centre gap -->
         <line x1="2090" y1="2700" x2="2535" y2="2700" class="dimension" />
-        <text x="2312" y="2570" class="dimension">610±20mm</text>
+        <text x="2312" y="2570" class="dimension">480±20mm</text>
 
         <!-- dimension: Centre Y -->
         <line x1="2300" y1="2700" x2="2300" y2="5400" class="dimension" />
