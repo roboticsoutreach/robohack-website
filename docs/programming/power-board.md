@@ -1,43 +1,44 @@
 # Power Board API
 
-The power board can be accessed using the `power_board` property of
-the `Robot` object.
+The power board can be accessed using the `power` submodule in `sbot`:
 
 ```python
-my_power_board = robot.power_board
+power.get_battery_data(...)
 ```
-
 ## Power outputs
 
-The six outputs of the power board are grouped together as `power_board.outputs`.
+The power board's outputs (H0, H1, L0, L1, etc) are identified in the `PowerOutputPosition` enum (importable from `sbot`):
+
+```python
+power.set_output(PowerOutputPosition.H0, True)
+```
 
 The power board's six outputs can be turned on and off using the
-`power_on` and `power_off` functions of the group respectively.
+`set_output` function of the submodule, which takes a boolean on/off value.
 
 :::tip
-`power_on` is called when you set up your robot, so
+All outputs are set on when you set up your robot, so
 this doesn't need to be called manually. The ports will come on
 automatically as soon as your robot is ready, before the start button is
 pressed.
 :::
 
 ```python
-robot.power_board.outputs.power_off()
-robot.power_board.outputs.power_on()
+power.set_output(PowerOutputPosition.H0, True)
+power.set_output(PowerOutputPosition.L1, False)
 ```
 
-You can also get information about and control each output in the group.
-An output is indexed using the appropriate `PowerOutputPosition`.
+You can also get information about and control each output in the group:
 
 ```python
 from sbot import PowerOutputPosition
 
-robot.power_board.outputs[PowerOutputPosition.H0].is_enabled = True
-robot.power_board.outputs[PowerOutputPosition.L3].is_enabled = False
+power.set_output(PowerOutputPosition.H0, True)
+power.set_output(PowerOutputPosition.L3, False)
 
-boolean_value = robot.power_board.outputs[PowerOutputPosition.L2].is_enabled
+boolean_value = power.is_output_on(PowerOutputPosition.L2)
 
-current_amps = robot.power_board.outputs[PowerOutputPosition.H1].current
+current_amps = power.get_output_current(PowerOutputPosition.H1)
 ```
 
 :::warning
@@ -53,51 +54,5 @@ The power board has some sensors that can monitor the status of your battery.
 This can be useful for checking the charge status of your battery.
 
 ```python
-battery_voltage = robot.power_board.battery_sensor.voltage
-battery_current_amps = robot.power_board.battery_sensor.current
+battery_voltage, battery_current = power.get_battery_data()
 ```
-
-## Buzzing 🐝
-
-The power board has a piezo sounder which can buzz.
-
-The `buzz` function accepts two parameters. The first argument is the duration of the beep, in seconds.
-The second argument is either the note you want to play, or the frequency of the buzzer (in Hertz).
-
-Theoretically, the piezo buzzer will buzz at any provided frequency,
-however humans can only hear between [20Hz and
-20000Hz](https://en.wikipedia.org/wiki/Hearing_range#Humans).
-
-The `Note` enum provides notes in [scientific pitch notation](https://en.wikipedia.org/wiki/Scientific_pitch_notation) between
-`C6` and `C8`. You can play other tones by providing a frequency.
-
-:::tip
-Calling `buzz` is non-blocking, which means it doesn't
-actually wait for the piezo to stop buzzing before continuing with your
-code. If you want to wait for the buzzing to stop, add a
-`sleep` afterwards! If you send more than 32 beeps to the robot too
-quickly, your power board will crash!
-:::
-
-```python
-from sbot import Note
-
-# Buzz in D6 for half a second
-robot.power_board.piezo.buzz(Note.D6, 0.5)
-
-# Buzz at 400Hz for 2 seconds
-robot.power_board.piezo.buzz(400, 2)
-```
-
-## Start Button
-
-You can manually wait for the start button to be pressed, not only at
-the start.
-
-```python
-robot.wait_start()
-```
-
-This may be useful for debugging, but be sure to remove it in the
-competition, as you won't be allowed to touch the start button after a match has begun!
-
