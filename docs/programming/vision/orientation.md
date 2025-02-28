@@ -9,7 +9,7 @@ Orientation represents the rotation of a marker around its center. These can be 
 -   `roll` - the angle of rotation in radians clockwise about the longitudinal axis.
 
 ```python
-markers = robot.camera.see()
+markers = vision.detect_markers()
 
 for marker in markers:
    print(marker.orientation.yaw)
