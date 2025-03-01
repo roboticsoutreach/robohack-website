@@ -78,10 +78,6 @@ export default function EventIndex() {
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>08:00</td>
-                                                <td>Breakfast</td>
-                                            </tr>
-                                            <tr>
                                                 <td>09:20</td>
                                                 <td>Lightning talks & competition briefing</td>
                                             </tr>
@@ -102,7 +98,7 @@ export default function EventIndex() {
                                                 <td>Prizegiving & robot deconstruction</td>
                                             </tr>
                                             <tr>
-                                                <td>14:15</td>
+                                                <td>14:30</td>
                                                 <td>End of event</td>
                                             </tr>
                                         </tbody>
@@ -116,4 +112,3 @@ export default function EventIndex() {
         </Layout>
     );
 }
-
