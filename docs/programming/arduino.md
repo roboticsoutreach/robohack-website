@@ -81,11 +81,11 @@ arduino.digital_write(4, True)
 arduino.digital_write(6, False)
 ```
 
-### Analog Input
+### Analogue Input
 
 Certain sensors output analog signals rather than digital ones, and so
-have to be read differently. The Arduino has six analog inputs, which
-are labelled `A0` to `A5`. Once again, the analog pins are available as an enum `AnalogPin`, which is imported from `sbot` manually or though `import *`.
+have to be read differently. The Arduino has six analogue inputs, which
+are labelled `A0` to `A5`. Once again, the analogue pins are available as an enum `AnalogPin`, which is imported from `sbot` manually or though `import *`.
 
 :::tip
 Analog signals can have any voltage, while digital signals can only
@@ -113,11 +113,10 @@ You can also measure distance using an ultrasound sensor from the arduino. Ultra
 # - Trigger pin: 4
 # - Echo pin: 5
 
-distance_mm = arduino.ultrasound_measure_distance(4, 5)
+distance_mm = arduino.measure_ultrasound_distance(4, 5)
 ```
 
 :::warning
 The ultrasound sensor can measure distances up to 4 metres.
-If the ultrasound signal has to travel further than 4m, the sensor will timeout and return 0.
+If the ultrasound signal has to travel further than 4m, the sensor will time out and return 0.
 :::
-
