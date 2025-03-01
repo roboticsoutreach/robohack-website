@@ -10,5 +10,5 @@ The game rules can be found on the [Rules](/rules) page.
 
 Some parts of the arena are labelled with markers. These can be downloaded [here](https://drive.google.com/file/d/1NJt-c5RQAgH3VXfXbUPDw1GbqQhPc8Gb/view?usp=sharing).
 
-Each PDF contains a single marker, which when printed on a single page will be the correct size.
+Each PDF contains a single marker, which when printed on a single A4 page will be the correct size.
 
