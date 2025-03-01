@@ -31,7 +31,7 @@ Every marker that your robot can see will have a square annotated around it, wit
 Snapshots are saved to your USB drive, and can be viewed on another computer.
 
 ```python
-vision.capture("snapshot.jpg")
+vision.detect_markers(save="snapshot.jpg")
 ```
 
 ![An annotated arena with Fiducial Markers.](../../assets/img/api/vision/arena_marker_annotated.jpg)
