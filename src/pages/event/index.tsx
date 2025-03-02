@@ -31,6 +31,13 @@ export default function EventIndex() {
                                 Photos and videos will be taken at this event. If you do not wish to be included in
                                 this, please let a member of event crew know so that we can accommodate this.
                             </p>
+
+                            <h2>Soundtrack</h2>
+                            <p>The playlists from the event can be found below:</p>
+                            <ul>
+                                <li><a href="https://open.spotify.com/playlist/3lehPL8lJ9UPzlQqOhx5Ub">Epic playlist</a></li>
+                                <li><a href="https://open.spotify.com/playlist/6DmoExxIzeuiBx3N1cwfOC"><i>Chill</i> playlist</a></li>
+                            </ul>
                         </div>
 
                         <div className="col col--6">
